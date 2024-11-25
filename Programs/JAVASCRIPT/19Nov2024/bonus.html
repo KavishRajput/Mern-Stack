@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elseif</title>
+</head>
+<body>
+    <!-- Check Bonus -->
+     <label for="salary">Salary</label>
+     <br>
+    <input type="number" id="salary" placeholder="Enter Salary">
+    <br>
+    <br>
+    <label for="duration">Time Period Of Service</label>
+    <br>
+    <input type="number" id="duration" placeholder="Enter Time Period of Service in year">
+    <br>
+    <br>
+
+    <button onclick="bonus()">Check Bonus</button>
+    <br>
+    <br>
+
+    <label for="res1">Bonus In Percetage</label>
+    <br>
+    <input type="text" id="res1" placeholder="Bonus in %">
+    <br>
+    <br>
+    <label for="bonus">Bonus Amount</label>
+    <br>
+    <input type="text" id="bonus" placeholder="Bonus">
+    <br>
+    <br>
+    <label for="totalsalary">Total Salary</label>
+    <br>
+    <input type="text" id="totalsalary" placeholder="salary With bonus">
+</body>
+</html>
+<script>
+    //Check Bonus
+    function bonus(){
+        var duration = Number(document.getElementById("duration").value);
+        var salary = Number(document.getElementById("salary").value);
+        if(duration>10){
+            document.getElementById("res1").value="10% Bonus";
+            var bonus = salary*10/100;
+            var t_salary=bonus+salary;
+            document.getElementById("bonus").value=bonus;
+            document.getElementById("totalsalary").value=t_salary;
+            
+        }
+        else if(duration>=6){
+            document.getElementById("res1").value="8% Bonus";
+            var bonus = salary*8/100;
+            var t_salary=bonus+salary;
+            document.getElementById("bonus").value=bonus;
+            document.getElementById("totalsalary").value=t_salary;
+        }
+        else{
+            document.getElementById("res1").value="5% Bonus";
+            var bonus = salary*5/100;
+            var t_salary=bonus+salary;
+            document.getElementById("bonus").value=bonus;
+            document.getElementById("totalsalary").value=t_salary;
+        }
+    }
+
+</script>

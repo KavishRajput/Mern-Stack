@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herons Formula</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var Side1=parseInt(prompt("Enter 1st Side Of Triangle"));
+    var Side2=parseInt(prompt("Enter 2nd Side Of Triangle"));
+    var Side3=parseInt(prompt("Enter 3rd Side Of Triangle"));
+    var Parameter = (Side1+Side2+Side3)/2
+    var Area=(Parameter*(Parameter-Side1)*(Parameter-Side2)*(Parameter-Side3))**0.5;
+    document.write("Parameter = "+Parameter);
+    document.write("<br>The Area Of Triangle with Side1 = "+Side1+" , Side2 = "+Side2+" , and Side3 = "+Side3+ " is "+Area);
+</script>

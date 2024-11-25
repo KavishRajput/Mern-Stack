@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Marks Attendence</title>
+</head>
+<body>
+            <h1>Simple If </h1>
+            <button onclick="age()">Check Age</button>
+            <p id="result"></p>
+
+            <h1>If Else</h1>
+            <button onclick="marks()">Check Result</button>
+            <p id="result2"></p>
+            <br>
+
+            <h1>If Else</h1>
+            <button onclick="attendance()">Exam Eligibility</button>
+            <p id="result3"></p>
+
+    <script>
+        function age(){
+        var age=parseInt(prompt("Enter Your Age "));
+        if(age>=18){
+            document.getElementById("result").innerHTML="You Are Eligible To Vote";
+        }
+        if(age<18){
+            document.getElementById("result").innerHTML="You Are Not Eligible To Vote";
+        }
+    }
+
+    function marks(){
+        var marks=Number(prompt("Enter Your Marks"));
+        if(marks>70){
+            document.getElementById("result2").innerHTML="Pass With Merit";
+        }
+        else{
+            document.getElementById("result2").innerHTML="Pass";
+        }
+        }
+
+        function attendance(){
+            var lecture = parseInt(prompt("Enter The No of  Lecture You Attend"));
+            var total_lecture = parseInt(prompt("Enter The Total Lecture"));
+            var Percentage = lecture/total_lecture*100;
+            if(Percentage>70){
+            document.getElementById("result3").innerHTML="You Are Eligible For Exam";
+            }
+            else{
+            document.getElementById("result3").innerHTML="You Are Not Elegible For Exam";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="electricity()">Check Price</button>
+    <input type="number" name="Units" id="Units">
+    <p id="Price"></p>
+</body>
+</html>
+<script>
+    function electricity(){
+        var Units = Number(document.getElementById("Units").value);
+        if(Units<=100){
+            document.getElementById("Price").innerHTML="2rs per Unit";
+        }
+        else if(Units<200){
+            document.getElementById("Price").innerHTML="5rs per Unit";
+        }
+        else if(Units<300){
+            document.getElementById("Price").innerHTML="7rs per Unit";
+        }
+        else{
+            document.getElementById("Price").innerHTML="10rs per Unit";
+        }
+    }
+</script>

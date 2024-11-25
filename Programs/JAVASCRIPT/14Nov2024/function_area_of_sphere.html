@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+     <button onclick="Msg()">Alert Box</button>
+     <button onclick="Area_Sphere()">Area Of Sphere</button>
+</body>
+</html>
+<script>
+    function Msg(){
+        alert("Welcome to My Website");
+    }
+    function Area_Sphere(){
+    var radius=Number(prompt("Enter The  Radius Of  Sphere"));
+    var Area= 4*22/7*radius**3
+    document.write("The Total Serface Area of Sphere Whose radius = "+radius+" is "+Area);
+    }
+</script>
