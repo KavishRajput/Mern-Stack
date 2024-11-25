@@ -1,4 +1,4 @@
-    <!-- Cpnditional statement
+    <!-- Conditional statement
             1. Simple if 
                 Syntax
                     if(Condition){
