@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <!-- <h2>Questions</h2>
+    1.______is the graphical representation of steps in coditional statement
+    2.which keyword is used to create a variable
+    3. write the syntax of selecting an element by id in javascript
+    4. except 3 side of triangle and check wheather the triangle is possible or not
+    5. except 3 no. from user and arrange them in decending order
+    6. write a program to check wheather a year is leap year or not -->
+
+    <!-- <h2>Answers</h2>
+     1. flowchart
+     2. var
+     3. <input type="text" name="" id="ID">
+        var variable_name=document.getElementById("ID").value;
+        document.getElementById.innerHTML="print"; -->
+    <button onclick="triangle()">Triangle</button>
+    <p id="result_1"></p>
+    <button onclick="descending()">Descending</button>
+    <p id="result_2"></p>
+    <button onclick="leap()">Leap Year</button>
+    <p id="result_3"></p>
+        <script>
+            function triangle(){
+                var side_1 = Number(prompt("Enter The 1st Side"));
+                var side_2 = Number(prompt("Enter The 2nd Side"));
+                var side_3 = Number(prompt("Enter The 3rd Side"));
+                if(side_1+side_2>side_3&&side_2+side_3>side1&&side_1+side_3>side2){
+                    document.getElementById("result_1").innerHTML="It is a valid Triangle";
+                }
+                else{
+                    document.getElementById("result_1").innerHTML="It is not a valid Triangle";
+                }
+
+            }
+            function descending(){
+                var num1=Number(prompt("Enter The 1st Number"));
+                var num2=Number(prompt("Enter The 2nd Number"));
+                var num3=Number(prompt("Enter The 3rd Number"));
+                if(num1>num2 && num1>num3 && num2>num3){
+                    document.getElementById("result_2").innerHTML=num1+" "+num2+" " +num3;
+                }
+                else if(num2>num1 && num2>num3 &&num3>num1){
+                    document.getElementById("result_2").innerHTML=num2+" "+num3+" " +num1;
+                }
+                else if(num3>num1&&num3>num2&&num2>num1){
+                    document.getElementById("result_2").innerHTML=num3+" "+num2+" " +num1;
+                }
+                else if(num1>num2 && num1>num3 && num2<num3){
+                    document.getElementById("result_2").innerHTML=num1+" "+num3+" " +num2;
+                }
+                else if(num2>num1 && num2>num3 &&num3<num1){
+                    document.getElementById("result_2").innerHTML=num2+" "+num1+" " +num3;
+                }
+                else{
+                    document.getElementById("result_2").innerHTML=num3+" "+num1+" " +num2;
+                }
+            }
+            function leap(){
+                var year=Number(prompt("Enter a year"));
+                if(year%100==0&&year%400==0){
+                    document.getElementById("result_3").innerHTML="It is a Leap Year";
+                }
+                else{
+                    if(year%4==0){
+
+                        document.getElementById("result_3").innerHTML="It is a Leap Year";
+                    }
+                    else{   
+                        document.getElementById("result_3").innerHTML="it is not a leap year";
+                    }
+                }
+            }
+
+
+        </script>
+
+
+</body>
+</html>
