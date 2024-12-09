@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(40, 39, 39);
+        }
+        .main{
+            perspective: 1100px;
+            transform-style: preserve-3d;
+            transform: rotateX(-28deg) translateY(-120px);
+        }
+        .main:hover .container{
+            animation-play-state: paused;
+        }
+        .container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style: preserve-3d;
+            animation: rotation 50s linear infinite;
+        }
+        @keyframes rotation{
+            from{
+                transform: rotateY(0deg);
+            }
+            to{
+                transform:  rotateY(-360deg);
+            }
+        }
+        .imgbox{
+            position: absolute;
+            height: 250px;
+            width: 150px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 10px;
+            overflow: hidden;
+            transform: rotateY(calc((22.5deg)*var(--i))) rotateX(0deg) translateZ(450px) translateY(-100px);
+            box-shadow: 5px 5px 10px;
+            -webkit-box-reflect: below 10px linear-gradient(transparent 80%, black 100%);
+            filter: brightness(1.2);
+        }
+        img{
+            height: inherit;
+            width: inherit;
+        }
+    </style>
+</head>
+<body>
+        <div class="main">
+            <div class="container">
+                <div class="imgbox" style="--i:1"><img src="https://i.pinimg.com/474x/2e/c7/5b/2ec75bc3c23420720fc9f66983c6e7c6.jpg" alt=""></div>
+                <div class="imgbox" style="--i:2"><img src="https://i.pinimg.com/474x/63/dd/ec/63ddec75747182ebf0af9f460b32049f.jpg" alt=""></div>
+                <div class="imgbox" style="--i:3"><img src="https://i.pinimg.com/474x/67/8c/1f/678c1fe6ffd30c8be24667ff2f3944ac.jpg" alt=""></div>
+                <div class="imgbox" style="--i:4"><img src="https://i.pinimg.com/474x/65/7a/bd/657abd08b62a54f45cd5e73c74fa04fd.jpg" alt=""></div>
+                <div class="imgbox" style="--i:5"><img src="https://i.pinimg.com/474x/49/25/3b/49253b55e4dd554afdb90277890268e0.jpg" alt=""></div>
+                <div class="imgbox" style="--i:6"><img src="https://i.pinimg.com/474x/c8/09/06/c809062c30ce25b902a105faffeff73c.jpg" alt=""></div>
+                <div class="imgbox" style="--i:7"><img src="https://i.pinimg.com/736x/10/2b/7b/102b7b5374ac2d1ce006c0080d8d4354.jpg" alt=""></div>
+                <div class="imgbox" style="--i:8"><img src="https://i.pinimg.com/474x/69/81/8a/69818a5ed54eec7ef3278f52b1f3c7a5.jpg" alt=""></div>
+                <div class="imgbox" style="--i:9"><img src="https://i.pinimg.com/736x/b3/22/ea/b322eaf8e3c4b49513a45b83c3ce511a.jpg" alt=""></div>
+                <div class="imgbox" style="--i:10"><img src="https://i.pinimg.com/474x/81/09/a7/8109a7683768b9b8fad4d6ccdaa5ed9b.jpg" alt=""></div>
+                <div class="imgbox" style="--i:11"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNLPDll6dJNgyAjWatQG5hwN4huhYMt3VvS3-ZFGLsu1SrUVgfCX2QBv-PTQajqq5CbmI&usqp=CAU" alt=""></div>
+                <div class="imgbox" style="--i:12"><img src="https://www.worldhistory.org/img/r/p/500x600/5417.jpg?v=1684314969" alt=""></div>
+                <div class="imgbox" style="--i:13"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR95xguwQ0TPbp1KD0Bp7zsLeQqOiFSNnRwKpbKd4-y86oHPgYJudzRyTRX_DWa77RrnTs&usqp=CAU" alt=""></div>
+                <div class="imgbox" style="--i:14"><img src="https://www.themarmarahotels.com/hs-fs/hubfs/halikarnas.jpg?width=1200&height=686&name=halikarnas.jpg" alt=""></div>
+                <div class="imgbox" style="--i:15"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFd3N6ghL8fWTwVc_MWbCvMTEOjQYYbNdnMLidmjN9952UXVYX7xprjDwaAo8Kt2ExnHI&usqp=CAU" alt=""></div>
+                <div class="imgbox" style="--i:16"><img src="https://i.natgeofe.com/n/11bfaab1-9707-4dfd-8131-3297d0c1c40f/RSAlexandria1.jpg" alt=""></div>
+            </div>
+        </div>
+</body>
+</html>
