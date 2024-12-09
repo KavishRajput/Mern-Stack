@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container > p {
+        color: blue;
+      }
+      /* p+div{
+        background-color: crimson;
+       } */
+      p ~ div {
+        background-color: crimson;
+      }
+      .inner {
+        border: 1px solid #000;
+      }
+      .text::first-letter{
+        color: red;
+        font-size: 30px;
+      }
+      .text::first-line{
+        color: blue;
+      }
+      input::placeholder{
+        color: greenyellow;
+      }
+      ul li::marker{
+        font-size: 30px;
+        color: red;
+      }
+      ::selection{
+        color: red;
+        background-color: black;
+      }
+      ul li{
+        position: relative;
+      }
+
+      /* before and after */
+      ul li::before{
+        content: "";
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        z-index: -1;
+
+      }
+
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- combinators -->
+    <div class="container">
+      <p>p tag 1</p>
+      <div class="inner">
+        <p>inner p tag</p>
+      </div>
+      <div class="inner">
+        <p>inner p tag</p>
+      </div>
+    </div>
+
+    <!-- pseudo classes and elements -->
+
+    <p class="text">
+   hello   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex tempora
+      architecto consectetur minima numquam unde at! Tempore laboriosam quos,
+      assumenda optio dolores excepturi in magnam mollitia laborum, molestias
+      sit similique.
+    </p>
+    <input type="text" placeholder="enter name">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+  </body>
+</html>
