@@ -1,0 +1,44 @@
+    <!-- Conditional statement
+            1. Simple if 
+                Syntax
+                    if(Condition){
+                    Statement}
+
+                Flow Diagram
+                    True_________Condition__________False
+                        |                                                         |
+                        |                                                         |
+                        |                                                         |
+                Statement                                                  |
+                        |                                                         |
+                        |                                                         |
+                        ______________Exit_________________
+
+            2. If Else
+                Syntax
+                    if(Condition){
+                    Statement1}
+                    else{
+                    statement2}
+
+                    Flow Diagram
+                    True_________Condition__________False
+                        |                                                         |
+                        |                                                         |
+                        |                                                         |
+                Statement  1                                        Statement 2
+                        |                                                         |
+                        |                                                         |
+                        ______________Exit_________________
+
+            3. Nested If
+            4. while
+            5. Do while -->
+
+
+
+
+break; ->
+stop the iteration according to the specified Condition
+continue->
+it is used to skip the iteration according to the specified condition
