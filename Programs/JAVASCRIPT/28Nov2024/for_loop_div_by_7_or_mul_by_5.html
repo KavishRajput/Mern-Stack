@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Divisible By 7 and Multiple Of 5 Between Given Range Using For Loop</title>
+</head>
+<body>
+    <button onclick="num()">Result</button>
+    <p id="div1"></p>
+    <p id="div"></p>
+    <p id="mul1"></p>
+    <p id="mul"></p>
+    <p id="div_mul1"></p>
+    <p id="div_mul"></p>
+    <script>
+        function num(){
+            var start=Number(prompt("Enter The Starting Range"));
+            var end=Number(prompt("Enter The Ending Range"));
+            for(var i=start;i<=end;i++){
+                if(i%7==0){
+                    document.getElementById("div1").innerHTML="Number Divisible By 7";
+                    document.getElementById("div").innerHTML+=i+"<br>";
+                }
+                if(i%5==0){
+                    document.getElementById("mul1").innerHTML="Number Multiple Of 5";
+                    document.getElementById("mul").innerHTML+=i+"<br>";
+                }
+                if(i%5==0&&i%7==0){
+                    document.getElementById("div_mul1").innerHTML="Number Divisible By 7 And Multiple Of  5";
+                    document.getElementById("div_mul").innerHTML+=i+"<br>";
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>

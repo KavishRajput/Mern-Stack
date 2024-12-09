@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Library Charges Using Elseif</title>
+</head>
+<body>
+    <label for="duration">Number Of Days</label>
+    <br>
+    <input type="number" name="duration" id="duration">
+    <br>
+    <br>
+    <button onclick="lib_char()">Calulate</button>
+    <br>
+    <br>
+    <label for="rate">Library Charge Rate</label>
+    <br>
+    <input type="text" name="rate" id="rate">
+    <br>
+    <br>
+    <label for="charge">Library Charge</label>
+    <br>
+    <input type="text" name="charge" id="charge">
+
+    <script>
+        function lib_char(){
+        var duration = Number(document.getElementById("duration").value);
+        if(duration<=5){
+            document.getElementById("rate").value="rs 2/day";
+            var charge=2*duration;
+            document.getElementById("charge").value=charge;
+
+        }
+        else if(duration<=10){
+            document.getElementById("rate").value="rs 3/day";
+            var charge=3*duration;
+            document.getElementById("charge").value=charge;
+        }
+        else if(duration<=15){
+            document.getElementById("rate").value="rs 4/day";
+            var charge=4*duration;
+            document.getElementById("charge").value=charge;
+        }
+        else{
+            document.getElementById("rate").value="rs 5/day";
+            var charge=5*duration;
+            document.getElementById("charge").value=charge;
+        }
+    }
+    </script>
+</body>
+</html>

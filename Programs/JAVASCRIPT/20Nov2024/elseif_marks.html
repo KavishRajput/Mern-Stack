@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Stream And Total Marks By Input Marks Of 5 Subjects using Else If</title>
+</head>
+<body>
+    <label for="english">English Marks</label>
+    <br>
+    <input type="number" name="english" id="english">
+    <br>
+    <br>
+    <label for="maths">Maths Marks</label>
+    <br>
+    <input type="number" name="maths" id="maths">
+    <br>
+    <br>
+    <label for="science">Science</label>
+    <br>
+    <input type="number" name="science" id="science">
+    <br>
+    <br>
+    <label for="social_science">Social Science Marks</label>
+    <br>
+    <input type="number" name="social_science" id="social_science">
+    <br>
+    <br>
+    <button onclick="stream()">Check Stream</button>
+    <br>
+    <br>
+    <label for="total_marks">Total Marks</label>
+    <br>
+    <input type="number" name="total_marks" id="total_marks">
+    <br>
+    <label for="stream">Stream</label>
+    <br>
+    <input type="text" name="stream" id="stream">
+    <br>
+
+    <script>
+        function stream(){
+            var english=Number(document.getElementById("english").value);
+            var maths=Number(document.getElementById("maths").value);
+            var science=Number(document.getElementById("science").value);
+            var social_science=Number(document.getElementById("social_science").value);
+            var total_marks=english+maths+science+social_science;
+            document.getElementById("total_marks").value=total_marks;
+            if(english>80&&maths>80&&science>80&&social_science>80){
+                document.getElementById("stream").value="Science Stream";
+            }
+            else if(english>80&&maths>50||science>50){
+                document.getElementById("stream").value="Commerce Stream";
+            }
+            else if(english>80&&social_science>80){
+                document.getElementById("stream").value="Commerce Stream";
+            }
+            else{
+                document.getElementById("stream").value="No Stream Provided";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Or Consonant Using Elseif</title>
+</head>
+<body>
+    <label for="alphabet">Enter Any Alphabet</label>
+    <input type="text" name="alphabet" id="alphabet">
+    <button onclick="v_or_c()">Check Vowel Or Consonant</button>
+    <p id="result"></p>
+
+    <script>
+        function v_or_c(){
+            var alphabet=document.getElementById("alphabet").value;
+            if(alphabet=="a"||alphabet=="e"||alphabet=="i"||alphabet=="o"||alphabet=="u" ||alphabet=="A"||alphabet=="E"||alphabet=="I"||alphabet=="O"||alphabet=="U" ){
+                document.getElementById("result").innerHTML=alphabet+" is a vowel";
+            }
+            else{
+                document.getElementById("result").innerHTML=alphabet+" is a consonent";
+            }
+
+        }
+    </script>
+</body>
+</html>

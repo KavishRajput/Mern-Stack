@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers that are multiples of three and five, print "FizzBuzz" Using While Loop.</title>
+</head>
+<body>
+    <button onclick="num()">Show</button>
+    <p id="result"></p>
+    <script>
+        function num(){
+            var start=Number(prompt("Enter The Starting Range"));
+            var end=Number(prompt("Enter The Ending Range"));
+            var i=start;
+            while(i<=end){
+                if(i%5==0&&i%7==0){
+                    document.getElementById("result").innerHTML+="FizzBuzz<br>";
+                }
+                else if(i%5==0){
+                    document.getElementById("result").innerHTML+="Buzz<br>";
+                }
+                else if(i%3==0){
+                    document.getElementById("result").innerHTML+="Fizz<br>";
+                }
+                else{
+                    document.getElementById("result").innerHTML+=i+"<br>";
+                }
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>

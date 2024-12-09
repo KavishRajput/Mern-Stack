@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calulate Fare Using Elseif</title>
+</head>
+<body>
+    <label for="distance">Distance In Kilometer</label>
+    <br>
+    <input type="number" name="distance" id="distance">
+    <br>
+    <br>
+    <button onclick="fare()">Calculate Fare</button>
+    <br>
+    <br>
+    <label for="rate">Fare Rate</label>
+    <br>
+    <input type="text" name="rate" id="rate">
+    <br>
+    <br>
+    <label for="total_fare">Total Fare</label>
+    <br>
+    <input type="text" name="total_fare" id="total_fare">
+    <br>
+    <p id="error"></p>
+
+    <script>
+        function fare(){
+            var distance= Number(document.getElementById("distance").value);
+            if(distance>90){
+                console.log(distance,fare,total_fare)
+                document.getElementById("rate").value="rs 9/km";
+                var total_fare=distance*9;
+                document.getElementById("total_fare").value=total_fare;
+            }
+            else if(distance>10){
+                document.getElementById("rate").value="rs 10/km";
+                var total_fare=distance*10;
+                document.getElementById("total_fare").value=total_fare;
+            }
+            else if(distance>0){
+                document.getElementById("rate").value="rs 11/km";
+                var total_fare=distance*11;
+                document.getElementById("total_fare").value=total_fare;
+            }
+            else{
+                document.getElementById("rate").value="error";
+                document.getElementById("total_fare").value="error";
+                document.getElementById("error").innerHTML="Distance cannot be Negative";
+            }
+        }
+    </script>
+</body>
+</html>

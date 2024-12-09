@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisible By 7 or Not Using If Else</title>
+</head>
+<body>
+    <h3>Divisible By 7 or Not</h3>
+    <input type="number" id="num1" placeholder="Enter Any number">
+    <p id="res1"></p>
+    <button onclick="divi()">Check</button>
+
+    <script>
+         //Divisible by 7 Or not
+    function divi(){
+    var num1 = Number(document.getElementById("num1").value);
+    if(num1%7==0){
+        document.getElementById("res1").innerHTML=num1+"is Divisible by 7";
+    }
+    else{
+        document.getElementById("res1").innerHTML=num1+"is Not Divisible by 7";
+    }
+}
+    </script>
+</body>
+</html>

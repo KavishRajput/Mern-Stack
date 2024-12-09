@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Scoped Variables</title>
+</head>
+<body>
+    <script>
+        //block scoped variables
+        if(a>30){
+            //var b=10; -> Can be access Out side Block{}
+            //let b=10; -> Can't be access Out side Block{}
+            const b=10; //Can be access Out side Block{}
+        }
+        console.log(b);
+
+    </script>
+</body>
+</html>

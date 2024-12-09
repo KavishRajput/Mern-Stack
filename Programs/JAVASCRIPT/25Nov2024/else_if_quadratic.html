@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else If Quadratic</title>
+</head>
+<body>
+    <button onclick="quadratic()">Quadratic </button>
+    <p id="result"></p>
+    <script>
+        function quadratic(){
+        var a=Number(prompt("Enter The Value Of  a"));
+        var b=Number(prompt("Enter The Value Of  b"));
+        var c=Number(prompt("Enter The Value Of  c"));
+        var d = b**2-(4*a*c);
+        if(d>0){
+            var d1 = -b+(d**0.5)/2*a;       
+            var d2 = +b-(d**0.5)/2*a;
+            document.getElementById("result").innerHTML="Two Solution Are Possible "+d1+" And "+d2;
+        }
+        else if(d<0){
+            document.getElementById("result").innerHTML="No Solution Are Possible";
+        }
+        else{
+            var d1 = -b+(d**0.5)/2*a
+            document.getElementById("result").innerHTML="One Solution Are Possible "+d1;
+        }
+        }
+    </script>
+</body>
+</html>

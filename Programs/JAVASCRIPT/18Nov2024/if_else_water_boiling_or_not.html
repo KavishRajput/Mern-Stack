@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Is Boiling Or Not Using If Else</title>
+</head>
+<body>
+    <h3>Water Is Boiling Or Not</h3>
+    <input type="number" id="num4" placeholder="Enter Temperature in celcius">
+    <p id="res4"></p>
+    <button onclick="boil()">Check</button>
+
+    <script>
+        //Water Is Boiling Or Not
+    function boil(){
+    var num4 = Number(document.getElementById("num4").value);
+    if(num4>100){
+        document.getElementById("res4").innerHTML=" Water Is Boiling";
+    }
+    else{
+        document.getElementById("res4").innerHTML=" Water Is Not Boiling";
+    }
+}
+    </script>
+</body>
+</html>

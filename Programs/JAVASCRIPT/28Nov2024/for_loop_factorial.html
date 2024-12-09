@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Using For Loop</title>
+</head>
+<body>
+    <button onclick="factorial()">Factorial</button>
+    <p id="result"></p>
+    <script>
+        function factorial(){
+        var num=Number(prompt("Enter Any Number For Factorial"));
+        fact=1;
+        for(var i=num;i>1;i--){
+            fact=fact*i;
+        }
+        document.getElementById("result").innerHTML=fact;
+    }
+    </script>
+</body>
+</html>

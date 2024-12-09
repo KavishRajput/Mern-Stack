@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Digits Using For Loop</title>
+</head>
+<body>
+    <button onclick="sum_of_digits()">Sum Of Digits</button>
+    <p id="error"></p>
+    <p id="digit"></p>
+    <p id="sum"></p>
+    <script>
+        function sum_of_digits(){
+            var num=Number(prompt("Enter Any Number"));
+            var rem=0;
+            var sum=0;
+            if(num<=0){
+                document.getElementById("error").innerHTML="Please Enter a Positive Number";
+            }
+            else{
+                var digits=document.getElementById("digit").innerHTML=num.toString().length;
+                for(var i=digits;i>=1;i--){
+                    rem=num%10;
+                    sum=sum+rem;
+                    num=parseInt(num/10);
+                    document.getElementById("sum").innerHTML=sum;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

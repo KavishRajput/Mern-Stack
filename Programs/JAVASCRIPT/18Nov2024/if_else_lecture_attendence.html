@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Attendence Using If Else</title>
+</head>
+<body>
+    <h3>Lecture Percentage</h3>
+    <input type="number" id="num5" placeholder="Enter Number of Lecture Attend">
+    <input type="number" id="num6" placeholder="Enter Total number Of Lecture">
+    <p id="res5"></p>
+    <button onclick="lec()">Check</button>
+
+    <script>
+        function lec(){
+    var num5 = Number(document.getElementById("num5").value);
+    var num6 = Number(document.getElementById("num6").value);
+    lec_pert=num5/num6*100;
+    if(lec_pert>75){
+        document.getElementById("res5").innerHTML="You Are Allowed For Exam";
+    }
+    else{
+        document.getElementById("res5").innerHTML="You Are Not Allowed For Exam";
+    }
+}   
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Leap Year</title>
+</head>
+<body>
+    <button onclick="leap()">Leap Year</button>
+    <p id="result_3"></p>
+    <script>
+        function leap(){
+                var year=Number(prompt("Enter a year"));
+                if(year%4==0&&year%400==0||year%100!==0){
+                    document.getElementById("result_3").innerHTML="It is a Leap Year";
+                    }
+                    else{   
+                        document.getElementById("result_3").innerHTML="it is not a leap year";
+                    }
+                }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested If JEE Mains</title>
+</head>
+<body>
+    <button onclick="jeemains()">Check Eligibility</button>
+    <script>
+        function jeemains(){
+            var twelfth = Number(prompt("Enter Marks In 12th"));
+            if(twelfth>70){
+                alert("You are eligible for jee mains");
+                var jeemains = Number(prompt("Enter Marks In jeemains"));
+                if(jeemains>55){
+                    alert("You are eligible for advance jee mains");
+                }
+                else{
+                    alert("You are not eligible for advance jee mains");
+                }
+            }
+                else{
+                    alert("You are not eligible for jee mains");
+                }
+            
+        }
+    </script>
+</body>
+</html>

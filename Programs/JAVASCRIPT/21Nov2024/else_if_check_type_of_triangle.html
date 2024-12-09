@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else If Check Type Of Triangle</title>
+</head>
+<body>
+    <label for="first_side">First Side Of Triangle</label>
+    <br>
+    <input type="number" name="first_side" id="first_side">
+    <br>
+    <br>
+    <label for="second_side">Second Side Of Triangle</label>
+    <br>
+    <input type="number" name="second_side" id="second_side">
+    <br>
+    <br>
+    <label for="third_side">Third Side Of Triangle</label>
+    <br>
+    <input type="number" name="third_side" id="third_side">
+    <br>
+    <br>
+    <button onclick="triangle()">Check Type Of Triangle</button>
+    <p id="result"></p>
+    <script>
+        function triangle(){
+            var first_side=Number(document.getElementById("first_side").value);
+            var second_side=Number(document.getElementById("second_side").value);
+            var third_side=Number(document.getElementById("third_side").value);
+            if(first_side==second_side&&second_side==third_side&&third_side==first_side){
+                document.getElementById("result").innerHTML=" It is an Equilateral Triangle";
+            }
+            else if((first_side==second_side&&second_side!=third_side)||(first_side==third_side&&third_side!=second_side)||(second_side==third_side&&third_side!=first_side)){
+                document.getElementById("result").innerHTML=" It is an isoceles Triangle";
+            }
+            else{
+                document.getElementById("result").innerHTML=" It is a Scalene Triangle";
+            }
+        }
+    </script>
+</body>
+</html>

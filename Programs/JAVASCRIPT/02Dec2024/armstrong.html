@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+<body>
+    <input type="number" name="num" id="num">
+    <button onclick="armstrong()">Armstrong</button>
+    <p id="result"></p>
+    <script>
+        function armstrong(){
+            var num=Number(document.getElementById("num").value);
+            var sum=0;
+            var original=num;
+            while(num>0){
+                var rem=num%10;
+                sum=sum+rem**3;
+                num=parseInt(num/10);
+            }
+            if(original==sum){
+                document.getElementById("result").innerHTML="It is an Armstrong Number";
+            }
+            else{
+                document.getElementById("result").innerHTML="It is not an Armstrong Number";
+            }
+        }
+    </script>
+</body>
+</html>

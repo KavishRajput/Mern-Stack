@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+    <input type="number" name="num1" id="num1">
+    <button onclick="prime()">Check Prime</button>
+    <p id="result"></p>
+    <script>
+        function prime(){
+            var num1=Number(document.getElementById("num1").value);
+            for(var i=2;i<num1;i++){
+                if(num1%i==0){
+                    document.getElementById("result").innerHTML="It is not a prime Number";
+                    break;
+                }
+                else{
+                   document.getElementById("result").innerHTML="It is a prime Number";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

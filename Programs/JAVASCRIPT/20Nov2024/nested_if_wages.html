@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Wages Using Nested If </title>
+</head>
+<body>
+    <label for="age">Age </label>
+    <br>
+    <input type="number" name="age" id="age">
+    <br>
+    <br>
+    <label for="gender">Gender</label>
+    <br>
+    <input type="text" name="gender" id="gender">
+    <br>
+    <br>
+    <label for="days">No. Of Days Working</label>
+    <br>
+    <input type="number" name="days" id="days">
+    <br>
+    <br>
+    <button onclick="wages()">Calculate Wages</button>
+    <br>
+    <br>
+    <label for="wagesperday">Wages per day</label>
+    <br>
+    <input type="text" name="wagesperday" id="wagesperday">
+    <br>
+    <br>
+    <label for="wages">Wages per day</label>
+    <br>
+    <input type="text" name="wages" id="wages">
+
+
+    <script>
+        function wages(){
+        var age = Number(document.getElementById("age").value);
+        var gender = Number(document.getElementById("gender").value);
+        var days = Number(document.getElementById("days").value);
+        if(age>=18&&age<30){
+            if(gender=="M"||"m"||"male"||"MALE"){
+                document.getElementById("wagesperday").value="rs 700/day";
+                var wages = days*700;
+                document.getElementById("wages").value=wages;
+            }
+            else if(gender=="F"||"f"||"female"||"FEMALE"){
+                document.getElementById("wagesperday").value="rs 750/day"
+                var wages = days*750;
+                document.getElementById("wages").value=wages;
+            }
+            else{
+                document.getElementById("wagesperday").value="Please Enter Valid Gender";
+                document.getElementById("wages").value="error";
+            }
+        }
+        else if(age>=30&&age<40){
+            if(gender=="M"||"m"||"male"||"MALE"){
+                document.getElementById("wagesperday").value="rs 800/day";
+                var wages = days*800;
+                document.getElementById("wages").value=wages;
+            }
+            else if(gender=="F"||"f"||"female"||"FEMALE"){
+                document.getElementById("wagesperday").value="rs 850/day";
+                var wages = days*850;
+                document.getElementById("wages").value=wages;
+            }
+            else{
+                document.getElementById("wagesperday").value="Please Enter Valid Gender";
+                document.getElementById("wages").value="error";
+            }
+        }
+        else{
+            document.getElementById("wagesperday").value="Enter appropriate age";
+        }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop Sum Of Even Number Between Given Range</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p id="total"></p>
+    <script>
+        var start=Number(prompt("Enter The Starting Value"));
+        var end=Number(prompt("Enter The Ending Value"));
+        var sum=0;
+        var i=start;
+        while(i<=end){
+            if(i%2==0){
+                document.getElementById("result").innerHTML+=i+"<br>";
+            }
+                sum=sum+i;
+                i++;
+            }
+            document.getElementById("total").innerHTML=sum;
+    </script>
+</body>
+</html>

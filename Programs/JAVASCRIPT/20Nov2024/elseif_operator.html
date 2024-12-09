@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation By Input Operator Sign In Textbox</title>
+</head>
+<body>
+    <input type="number" name="num1" id="num1" placeholder="Enter 1st Value">
+    <input type="text" name="operator" id="operator" placeholder="operator">
+    <input type="number" name="num2" id="num2" placeholder="Enter 2nd Value">
+    <button onclick="result()">Result</button>
+    <input type="text" name="result" id="result" placeholder="Result">
+    <p id="error"></p>
+<script>
+    function result(){
+        var num1=Number(document.getElementById("num1").value);
+        var num2=Number(document.getElementById("num2").value);
+        var operator=document.getElementById("operator").value;
+        if(operator=="+"){
+            var num3 = num1 + num2;
+        }
+        else if(operator=="-"){
+            var num3 = num1-num2;
+        }
+        else if(operator=="*"){
+            var num3 = num1*num2;
+        }
+        else if(operator=="/"){
+            var num3 = num1/num2;
+        }
+        else if(operator=="**"){
+            var num3 = num1 ** num2;
+        }
+        else if(operator=="%"){
+            var num3 = num1 % num2;
+        }
+        else{
+            document.getElementById("error").innerHTML="Please Insert Valid Operator";
+        }
+        document.getElementById("result").value=num3    ;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number +ve or -ve Using If Else</title>
+</head>
+<body>
+    <h3>Number +ve or -ve</h3>
+    <input type="number" id="num2" placeholder="Enter Any number">
+    <p id="res2"></p>
+    <button onclick="pos_neg()">Check</button>
+
+    <script>
+    //Number +ve or -ve
+    function pos_neg(){
+    var num2 = Number(document.getElementById("num2").value);
+    if(num2>=0){
+        document.getElementById("res2").innerHTML=num2+" is a Positive Number";
+    }
+    else{
+        document.getElementById("res2").innerHTML=num2+" is a Negaitive Number";
+    }
+}
+    </script>
+</body>
+</html>

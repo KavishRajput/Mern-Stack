@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palidrome Number</title>
+</head>
+<body>
+    <button onclick="reverse()">Palindrome</button>
+    <p id="result"></p>
+    <p id="result2"></p>
+    <script>
+        function reverse(){
+            var num = Number(prompt("Enter Any Number"));
+            var original=num;
+            while(num>0){
+                var rem=num%10;
+                var Temp_rev= document.getElementById("result").innerHTML+=rem;
+                num=parseInt(num/10);
+        }
+                var rev=parseInt(Temp_rev);
+        if(original==rev){
+            document.getElementById("result2").innerHTML="It is a palindrome Number";
+        }
+        else{
+            document.getElementById("result2").innerHTML+="It is not a palindome Number";
+        }
+    }
+    </script>
+</body>
+</html>
