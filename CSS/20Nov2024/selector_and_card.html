@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector and  Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      #box {
+        color: red;
+        background-color: bisque;
+      }
+      .container {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+      }
+      h2 {
+        background-color: yellowgreen;
+      }
+      .card{
+        height: max-content;
+        width: 300px;
+        /* border: 1px solid #000; */
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20px;
+        margin: 20px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+      }
+      .imagebox img{
+        width: 100%;
+        /* border-top-left-radius: 20px;
+        border-top-right-radius: 20px; */
+
+      }
+      .contentbox{
+        padding: 25px;
+      }
+      .category{
+        color: gray;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+
+      }
+      .contentbox h3{
+        text-transform: capitalize;
+        color: rgb(32, 32, 92);
+        line-height: 1.5;
+        margin-block: 10px;
+        font-size: 25px;
+      }
+      .content{
+        color: rgb(175, 175, 175);
+        line-height: 1.5;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p id="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tempore
+      veniam. Blanditiis velit enim sint, eveniet iure repudiandae magni ab illo
+      minima dolor commodi recusandae, ut itaque sit nesciunt iusto.
+    </p>
+    <div class="container"></div>
+    <p class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore,
+      tempora.
+    </p>
+
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <h2>Lorem, ipsum dolor.</h2>
+
+    <!-- cards  -->
+    <div class="card">
+      <div class="imagebox">
+        <img
+          src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="mountains"
+        />
+      </div>
+      <div class="contentbox">
+        <p class="category">Travel</p>
+        <h3>trip
+             planning for total beginnners</h3>
+        <p class="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+          soluta. Laudantium veritatis at deleniti est voluptas pariatur dicta.
+          Officia, corrupti!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

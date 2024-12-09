@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Rotate</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #222831;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 99vw;
+        }
+        .container .imgbox{
+            margin-left: 30px;
+            position: relative;
+            height: 50vh;
+            width: 19vw;
+            border: 5px solid #00ADB5;
+            border-radius: 40px;
+            overflow: hidden;
+            background-color: #393E46;
+            animation: card 3s alternate infinite;
+        }
+        @keyframes card {
+            from{
+                transform: perspective(500px) rotateY(-20deg);
+            }
+            to{
+                transform: perspective(500px) rotateY(20deg);
+            }
+        }
+        .container .imgbox img{
+            position: absolute;
+            width: 100%;
+            height: 85%;
+            background-color: aqua;
+        }
+        .container .imgbox p{
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            left: 10px;
+            font-size: 20px;
+            color: #EEEEEE;
+            text-transform: capitalize;
+        }
+        .container h1{
+            font-family: Arial,Helvetica, sans-serif;
+            background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            position: absolute;
+            top: -180px;
+            font-size: 200px;
+            line-height: 600px;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>7 WONDER OF WORLD</h1>
+        <div class="imgbox">
+            <img src="https://i.pinimg.com/736x/9d/67/2e/9d672ebbbcd000305620fe928ef29ba7.jpg" alt="Tajmahal">
+            <p>tajmahal</p>
+        </div>
+        <div class="imgbox">
+            <img src="https://i.pinimg.com/474x/0f/84/92/0f84926291dfb921c4aa2094a0893f79.jpg" alt="Machu Picchu">
+            <p>machu picchu</p>
+        </div>
+        <div class="imgbox">
+            <img src="https://i.pinimg.com/474x/dc/5b/f0/dc5bf056a442d95c41533610754382a2.jpg" alt="Great Wall Of China">
+            <p>great wall of china</p>
+        </div>
+        <div class="imgbox">
+            <img src="https://i.pinimg.com/736x/0c/05/42/0c0542d364a9c094cbeae828955a4c9e.jpg" alt="Colosseum">
+            <p>colosseum</p>
+        </div>
+        <div class="imgbox">
+            <img src="https://i.pinimg.com/736x/89/95/1b/89951b7344e62673692a3edd5e08cfb8.jpg" alt="Christ The Reedemer">
+            <p>christ the reedemer</p>
+        </div>
+        <div class="imgbox">
+            <img src="https://i.pinimg.com/736x/b8/e8/7b/b8e87b75128353a45fc88f36d395f183.jpg" alt="Chichen Itza">
+            <p>chichen Itza</p>
+        </div>
+        <div class="imgbox">
+            <img src="https://i.pinimg.com/474x/1c/b3/78/1cb378b8a195cbe60251ee0425de16bc.jpg" alt="Petra">
+            <p>petra</p>    
+        </div>
+    </div>
+</body>
+</html>

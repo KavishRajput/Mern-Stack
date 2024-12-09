@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce</title>
+    <style>
+        .ball{
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            border-radius: 50%;
+            animation-name: bounce;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-direction: alternate;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateX(0px) translateY(0px) ;
+            }
+            25%{
+                transform: translateX(20vw) translateY(75vh) ;
+            }
+            50%{
+                transform: translateX(40vw) translateY(0vh) ;
+            }
+            75%{
+                transform: translateX(60vw) translateY(75vh) ;
+            }
+            100%{
+                transform: translateX(85vw) translateY(0vh) ;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+
+    </div>
+</body>
+</html>

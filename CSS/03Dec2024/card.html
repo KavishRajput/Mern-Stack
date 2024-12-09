@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            position: relative;
+            height: 36rem;
+            width: 24rem;
+            background-image: url(https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80);
+            background-size: cover;
+            border-radius: 15px;
+            box-shadow: 4px 4px 15px;
+        }
+        .container:hover .heading{
+            bottom: 220px;
+        }
+        .container:hover .description{
+            opacity: 1;
+        }
+        .container:hover .footer{
+            opacity: 1;
+        }
+        .container .heading{
+            position: absolute;
+            bottom: 30px;
+            left: 28px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            transition: all 0.4s;
+        }
+        .container .description{
+            position: absolute;
+            bottom: 80px;
+            left: 28px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.5s;
+            opacity: 0;
+        }
+        .container .footer{
+            position: absolute;
+            bottom: 35px;
+            left: 28px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            transition: all 0.5s;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h2 class="heading">Card Heading</h2>
+            <div class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores harum? Dicta odio aut hic.</div>
+            <div class="footer">Find out more <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><rect width="15" height="15" fill="none"/><path fill="#f1ebf9" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"/></svg></span></div>
+        </div>
+</body>
+</html>
