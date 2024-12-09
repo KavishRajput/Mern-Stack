@@ -279,6 +279,15 @@ nav .right_nav a{
     font-size: 22px;
     line-height: 2;
 }
+#section_3 .right_sec3 ul li{
+    list-style: none;
+}
+#section_3 .right_sec3 ul li::before{
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAnxJREFUWEftlU1o02AYx/9P0s1BEdQ1nbgdvMyLX2fHcAWHBwVxjEVmm1o96Xk3wZu7qVc9uX7FrYk6GHgZ+IHiEAQPgogDZaCDrWmHIIVua/JIZ6tJt/VrLT24HJM8z+/3/vO+eQgtvqjFfOwK7CbwfyTQORLsFogvmsL6zMrU1Hf7yWt6At7R4AmY/JLBBwBkzRz3rjxVfxQlmiogDV/uhSi8BSD9WzWHDE2NNF3gT+zWOwA9tsh/CnuoZzkWyzRVoHso2LnWZs0BOGKDZy3i0+mE+r6pe8Bz4dpe6lh7A+CkDZQj4vPJhDpb+utv6B44HAp1ZDK55yD02UAWAXJSiz/Zau40TsDnc0lSzzMQzjpATFcNPRbebuhtEugaUrzs4mEBbY+X9AmjymlJXjmgMjBqf58ZYyk9fq9cD4dAl6K4rVWeB3AIwJIoioNLk5FPlSQ8sv8+ga473+PbhqbeqlTrEJBGlBCIJ2xFaVEUB8pJSHJgHMBNx8rBD1KaeqMSPP/cIVDYwd8AeGzFhkU0kE7EPpc29Mj+MQLdcRwrokfJRCwAgGsWyBccHL1y1DTN/DHab2uQYkZ/So9/Kd7bIq08ctbA6jnoulkNfFMCxaJKEl45MMyABkD4C2LMud2uMwvhcLZa+LYC+QddI/7jTMKrwhAp9jTAGAfhLgDRBvrA2XZfaubhr1rgZQXKfI5Sxnz7utC3OB1N1wqvKFAmiQKLFywW+9N6dLEeeFUCRQmL6DWAffbTQSSeSiYiX+uFVy2wIXFJOWYxvyjMdoNEYTA5Gf24E3hNAhsSQ4rXcrEs5Ehbno4ldwqvWaARwNIejZuGddrtCrQ8gd+XxeAhvVNdKwAAAABJRU5ErkJggg==);
+    margin-right: 20px;
+
+    
+}
 #section_3 .right_sec3 .learn_More{
     margin: 10px 30px 10px 100px;
     font-size: 22px;
